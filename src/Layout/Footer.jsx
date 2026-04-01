@@ -95,12 +95,12 @@ const Footer = () => {
           <p className="text-sm text-center md:text-base text-gray-800 dark:text-white">
             Copyright © {new Date().getFullYear()}{" "}
             <Link
-              to="https://mantrakshdevs.com"
+              to="https://www.linkedin.com/in/roberto-fokou"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 font-bold hover:underline dark:text-red-500"
             >
-              Mantraksh Devs
+              Roberto Fokou
             </Link>{" "}
             Crafted with{" "}
             <FaHeart className="inline-block text-red-500 ml-1" />

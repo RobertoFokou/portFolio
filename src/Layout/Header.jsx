@@ -59,9 +59,9 @@ const Header = ({ openMenu, setOpenMenu }) => {
             />
           </div>
           <div className="flex flex-col gap-1 items-start">
-            <h3 className="text-black dark:text-white">Anrew Lebedev</h3>
+            <h3 className="text-black dark:text-white">Roberto Fokou</h3>
             <span className="text-gray-light -mt-2 dark:text-gray-dark">
-              Web Designer
+              Dev Full Stack
             </span>
           </div>
         </div>
@@ -101,9 +101,9 @@ const Header = ({ openMenu, setOpenMenu }) => {
                 />
               </div>
               <div className="flex flex-col gap-1.5 items-start">
-                <h3 className="text-black dark:text-white">Anrew Lebedev</h3>
+                <h3 className="text-black dark:text-white">Roberto Fokou</h3>
                 <span className="text-gray-600 -mt-2 dark:text-gray-400">
-                  Web Designer
+                  Dev Full Stack
                 </span>
               </div>
             </div>
@@ -130,7 +130,7 @@ const Header = ({ openMenu, setOpenMenu }) => {
                 })}
               </span>
               <span className="block text-gray-light font-bold dark:text-gray-dark mt-1">
-                Surat , Gujarat
+                Yaounde, Cameroun
               </span>
             </div>
 

@@ -7,13 +7,13 @@ import img from "../images/person.jpg";
 const Information = () => {
   const [time, setTime] = useState("");
 
-  // Updates time every second using IST (India Standard Time)
+  // Updates time every second using WAT (West Africa Time / Yaounde)
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
-      const options = { hour: "2-digit", minute: "2-digit" };
-      const istTime = now.toLocaleTimeString("en-IN", options);
-      setTime(istTime);
+      const options = { hour: "2-digit", minute: "2-digit", timeZone: "Africa/Douala" };
+      const watTime = now.toLocaleTimeString("fr-FR", options);
+      setTime(watTime);
     };
 
     updateTime();
@@ -30,16 +30,16 @@ const Information = () => {
       className="max-w-3xl lg:border-x border-dashed border-border-light dark:border-border-dark mx-auto px-6 md:px-12 py-12"
     >
       <div className="flex items-center gap-5">
-        <img className="w-12 h-12 rounded-full border-2 border-blue-bg" src={img} alt="Andrew Lebedev profile"/>
-        <span className="text-slate-600 dark:text-gray-dark text-sm sm:text-base italic">Crafting sleek, modern web experiences 🚀</span>
+        <img className="w-12 h-12 rounded-full border-2 border-blue-bg" src={img} alt="Roberto Fokou profile"/>
+        <span className="text-slate-600 dark:text-gray-dark text-sm sm:text-base italic">Developpeur Full Stack MERN</span>
       </div>
 
       {/* Main Heading with Typewriter Effect */}
       <h1 className="text-black dark:text-white mt-6 text-2xl md:text-3xl font-extrabold max-w-sm md:leading-tight ">
-        Hi, I’m{" "}
+        Salut, je suis{" "}
         <span className="bg-gradient-to-r from-blue-700 to-pink-500 bg-clip-text text-transparent font-bold ">
           <Typewriter
-            words={["Andrew Lebedev"]}
+            words={["Roberto Fokou"]}
             loop={false}
             cursor={true}
             cursorStyle="|"
@@ -48,20 +48,20 @@ const Information = () => {
           />
         </span>
         <div>
-          turning tech ideas into{" "}
-          <span className="opacity-70">digital experiences.</span>
+          je transforme vos idees en{" "}
+          <span className="opacity-70">solutions web performantes.</span>
         </div>
       </h1>
 
       <p className="text-slate-600 dark:text-gray-dark mt-4 max-w-md">
-        I specialize in <strong>pixel-perfect</strong> design, modern{" "}
-        <strong>UI/UX</strong>, and smooth user journeys. Let’s build something
-        memorable.
+        Specialise en <strong>React</strong>, <strong>Angular</strong>,{" "}
+        <strong>Node.js</strong> et <strong>MongoDB</strong>. 4 ans d'experience
+        sur des projets web et e-sante.
       </p>
 
       {/* Contact Button + Clock */}
       <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:items-center">
-        <CustomButton text="Contact Me" />
+        <CustomButton text="Me contacter" />
         <motion.div
           className="dark:text-white md:px-5 py-2 px-3 md:py-2.5 md:text-base text-sm border bg-blue-700/15 border-blue-700/50 dark:bg-bg-dark dark:border-border-dark rounded-md tracking-widest shadow-lg text-blue-700"
           initial={{ scale: 0.9 }}
@@ -78,11 +78,12 @@ const Information = () => {
 
       {/* Trusted By Section */}
       <div className="mt-16">
-        <p className="text-slate-600 dark:text-gray-dark text-sm uppercase font-semibold mb-3">Trusted by the best</p>
-        <div className="flex gap-6 items-center">
-          <span className="text-slate-600 dark:text-gray-dark text-base">🚧 Apple</span>
-          <span className="text-slate-600 dark:text-gray-dark text-base">🌟 Dribbble</span>
-          <span className="text-slate-600 dark:text-gray-dark text-base">💼 Behance</span>
+        <p className="text-slate-600 dark:text-gray-dark text-sm uppercase font-semibold mb-3">Ils m'ont fait confiance</p>
+        <div className="flex gap-6 items-center flex-wrap">
+          <span className="text-slate-600 dark:text-gray-dark text-base">Alaxione</span>
+          <span className="text-slate-600 dark:text-gray-dark text-base">Gateway</span>
+          <span className="text-slate-600 dark:text-gray-dark text-base">Djib Service</span>
+          <span className="text-slate-600 dark:text-gray-dark text-base">Association WIM</span>
         </div>
       </div>
     </motion.div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import CustomButton from "../CustomButton";
 
 const Contact = () => {
@@ -34,7 +34,7 @@ const Contact = () => {
                       Name
                     </label>
                     <input
-                      placeholder="Andrew"
+                      placeholder="Votre nom"
                       className="py-3 px-5 mt-2 focus:outline-none w-full border rounded-md border-slate-300 dark:border-border-dark bg-slate-100 dark:bg-gradient-dark"
                     />
                   </div>
@@ -44,7 +44,7 @@ const Contact = () => {
                       Company
                     </label>
                     <input
-                      placeholder="Mantraksh Devs"
+                      placeholder="Votre entreprise"
                       className="py-3 px-5 mt-2 focus:outline-none w-full border rounded-md border-slate-300 dark:border-border-dark bg-slate-100 dark:bg-gradient-dark"
                     />
                   </div>
@@ -54,7 +54,7 @@ const Contact = () => {
                       Message
                     </label>
                     <textarea
-                      placeholder="Write your message here..."
+                      placeholder="Ecrivez votre message ici..."
                       className="py-3 px-5 mt-2 focus:outline-none w-full border rounded-md border-slate-300 dark:border-border-dark bg-slate-100 dark:bg-gradient-dark"
                       rows={6}
                     />
