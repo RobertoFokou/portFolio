@@ -27,15 +27,6 @@ const ServiceCards = () => {
               {service.description}
             </p>
 
-            <div className="my-4">
-              <span className="text-2xl font-bold text-black dark:text-white">
-                {service.price}
-              </span>
-              <span className="text-slate-600 dark:text-gray-dark">
-                {service.duration}
-              </span>
-            </div>
-
             <CustomButton
               text="Contact me"
               className="bg-[#A7C9F9] shadow-2xl hover:bg-[#A7C9F9]"

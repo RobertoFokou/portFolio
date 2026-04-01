@@ -38,10 +38,10 @@ const Sidebar = () => {
               </div>
               <div className="flex flex-col gap-1.5 items-start">
                 <h3 className="text-black text-lg font-bold dark:text-white">
-                  Anrew Lebedev
+                  Roberto Fokou
                 </h3>
                 <span className="text-gray-600 dark:text-gray-400 -mt-2">
-                  Web Designer
+                  Dev Full Stack
                 </span>
               </div>
             </div>
@@ -61,7 +61,7 @@ const Sidebar = () => {
                 })}
               </span>
               <span className="block text-gray-light font-bold dark:text-gray-dark mt-1">
-                Surat , Gujarat
+                Yaounde, Cameroun
               </span>
             </div>
             <div className="mt-3 cursor-pointer flex items-center justify-center gap-4 py-3 shadow-button-light border bg-blue-700/15 border-blue-700/50 dark:bg-bg-dark dark:border-border-dark dark:shadow-button-dark rounded-lg border-border-light">
